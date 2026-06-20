@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>跨境电商数据基础 - 跨境电商数据分析实训平台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">&#9638;</span>
+      <span class="logo-text">跨境电商数据分析实训平台</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">平台首页</a>
+      <a href="module1.html" class="nav-link active">数据基础</a>
+      <a href="module2.html" class="nav-link">选品分析</a>
+      <a href="module3.html" class="nav-link">流量营销</a>
+      <a href="module4.html" class="nav-link">综合实战</a>
+      <a href="resources.html" class="nav-link">学习资源</a>
+    </nav>
+    <div class="header-actions">
+      <span class="role-badge learner active" onclick="switchRole('learner')">学习者</span>
+      <span class="role-badge teacher" onclick="switchRole('teacher')">讲授者</span>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="border-left: 4px solid #185FA5;">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">首页</a> / 模块一</div>
+    <h1>&#127760; 跨境电商数据基础</h1>
+    <p>理解跨境电商业务模式与数据体系，掌握核心指标定义、数据来源与基础分析工具，建立跨境数据分析认知框架</p>
+    <div class="page-meta">
+      <span>&#128336; 建议学时：<strong>10课时</strong></span>
+      <span>&#128218; 知识单元：<strong>5个</strong></span>
+      <span>&#127358; 难度：<strong>入门级</strong></span>
+    </div>
+    <div class="module-progress">
+      <div class="mp-step current"></div>
+      <div class="mp-step"></div>
+      <div class="mp-step"></div>
+      <div class="mp-step"></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- 知识地图 -->
+    <div class="knowledge-map">
+      <div class="km-title">&#128205; 本模块知识地图</div>
+      <div class="km-grid">
+        <div class="km-item">
+          <h4>业务认知层</h4>
+          <p>跨境模式（B2C/B2B）、平台体系、业务流程</p>
+        </div>
+        <div class="km-item">
+          <h4>指标体系层</h4>
+          <p>流量/转化/客单/复购/利润全链路指标</p>
+        </div>
+        <div class="km-item">
+          <h4>数据来源层</h4>
+          <p>平台后台、广告平台、ERP、海关数据</p>
+        </div>
+        <div class="km-item">
+          <h4>工具操作层</h4>
+          <p>Excel/Python/SQL + 平台数据导出</p>
+        </div>
+        <div class="km-item">
+          <h4>分析思维层</h4>
+          <p>跨境场景下的数据分析逻辑与框架</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 单元列表 -->
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:24px;">课程单元（理实一体化设计）</h2>
+    <div class="units-grid">
+
+      <!-- 单元1 -->
+      <div class="unit-card" id="platforms">
+        <div class="unit-header">
+          <div class="unit-num">单元 1-1</div>
+          <h3>跨境电商业务模式与数据全景</h3>
+          <p>理解B2C（亚马逊、速卖通）、独立站（Shopify）、B2B等主流跨境模式，掌握各平台的数据产出点与核心数据表结构</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>区分B2C、B2B、独立站业务模式</li>
+            <li>了解亚马逊/速卖通/Shopify后台数据体系</li>
+            <li>掌握跨境业务全链路数据流转路径</li>
+            <li>识别分析决策中的关键数据节点</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 业务模式讲解 25min</span>
+          <span class="res-tag doc">&#128196; 平台数据体系对照表</span>
+          <span class="res-tag exercise">&#9997; 平台数据导览练习</span>
+        </div>
+      </div>
+
+      <!-- 单元2 -->
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 1-2</div>
+          <h3>跨境核心指标体系详解</h3>
+          <p>系统学习跨境电商标杆指标体系：曝光量、点击率、转化率、客单价、复购率、毛利率、ROI等，理解每个指标的业务含义与计算口径</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>掌握流量指标（曝光/点击/CTR）</li>
+            <li>掌握转化指标（CVR/订单量/客单价）</li>
+            <li>掌握盈利指标（GMV/毛利/净利/ROI）</li>
+            <li>用Excel计算指标并制作指标看板</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 指标详解 35min</span>
+          <span class="res-tag doc">&#128196; 指标计算速查表</span>
+          <span class="res-tag data">&#128190; 指标练习数据集</span>
+          <span class="res-tag exercise">&#9997; 指标计算实操作业</span>
+        </div>
+      </div>
+
+      <!-- 单元3 -->
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 1-3</div>
+          <h3>跨境数据来源与获取方法</h3>
+          <p>了解跨境业务中的各类数据来源：平台后台报表、广告平台数据、Google Analytics、ERP系统、海关数据、第三方工具（Jungle Scout等）</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>掌握亚马逊后台报表导出方法</li>
+            <li>了解速卖通/Shopify数据导出路径</li>
+            <li>了解Google Analytics跨境电商追踪设置</li>
+            <li>认识第三方数据工具的数据价值</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 数据获取实操 30min</span>
+          <span class="res-tag doc">&#128196; 数据来源目录手册</span>
+          <span class="res-tag exercise">&#9997; 数据导出实操练习</span>
+        </div>
+      </div>
+
+      <!-- 单元4 -->
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 1-4</div>
+          <h3>Excel跨境数据分析实操</h3>
+          <p>结合跨境真实数据，用Excel完成数据清洗、透视表分析、基础图表制作，产出第一份跨境数据分析练习报告</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>用Excel清洗跨境订单数据</li>
+            <li>用透视表分析SKU/国家/渠道表现</li>
+            <li>制作销售趋势图与对比柱状图</li>
+            <li>完成第一份跨境数据分析报告</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; Excel实操演示 40min</span>
+          <span class="res-tag data">&#128190; 亚马逊订单练习数据</span>
+          <span class="res-tag doc">&#128196; Excel跨境分析模板</span>
+          <span class="res-tag exercise">&#9997; 上机实操作业</span>
+        </div>
+      </div>
+
+      <!-- 单元5 -->
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 1-5</div>
+          <h3>跨境数据分析思维框架</h3>
+          <p>建立面向跨境业务问题的分析思维，学习如何将"销量下滑""广告亏损"等业务问题拆解为可分析的数据问题，掌握跨境常用分析框架</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>掌握跨境业务问题拆解方法</li>
+            <li>了解GMV拆解公式与北极星指标</li>
+            <li>掌握竞品分析/市场分析的思路</li>
+            <li>完成一份业务问题诊断练习</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 分析思维讲解 30min</span>
+          <span class="res-tag doc">&#128196; 跨境分析框架速查</span>
+          <span class="res-tag exercise">&#9997; 问题拆解练习</span>
+        </div>
+      </div>
+
+    </div><!-- /units-grid -->
+
+    <!-- 模块总结 -->
+    <div style="margin-top:40px;background:var(--blue-50);border-radius:var(--radius-xl);padding:28px;border:0.5px solid var(--border);">
+      <h3 style="font-size:15px;font-weight:500;margin-bottom:12px;">&#127919; 模块学习检验</h3>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:16px;">完成本模块后，你应该能够：从亚马逊后台导出订单数据，用Excel完成数据清洗与指标计算，并制作一份包含核心指标看板的跨境店铺数据分析报告。</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="resources.html#datasets" style="font-size:13px;color:var(--blue-600);padding:8px 16px;border:0.5px solid var(--blue-600);border-radius:8px;">&#128190; 下载跨境练习数据集</a>
+        <a href="module2.html" style="font-size:13px;color:var(--white);background:var(--blue-600);padding:8px 16px;border-radius:8px;">进入模块二 &#8594;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">跨境电商数据分析实训平台</div>
+        <p class="footer-desc">理实一体 · 跨境场景 · 项目驱动</p>
+      </div>
+      <div>
+        <div class="footer-title">学习模块</div>
+        <a href="module1.html">跨境电商数据基础</a>
+        <a href="module2.html">选品与供应链分析</a>
+        <a href="module3.html">流量与营销分析</a>
+        <a href="module4.html">综合实战项目</a>
+      </div>
+      <div>
+        <div class="footer-title">学习资源</div>
+        <a href="resources.html#datasets">跨境数据集</a>
+        <a href="resources.html#templates">运营报告模板</a>
+        <a href="resources.html#tools">API数据获取</a>
+        <a href="resources.html#teacher">理实教学包</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 跨境电商数据分析实训平台 · 理实一体化教学</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

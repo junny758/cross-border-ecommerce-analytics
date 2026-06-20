@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>学习资源库 - 跨境电商数据分析实训平台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">&#9638;</span>
+      <span class="logo-text">跨境电商数据分析实训平台</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">平台首页</a>
+      <a href="module1.html" class="nav-link">数据基础</a>
+      <a href="module2.html" class="nav-link">选品分析</a>
+      <a href="module3.html" class="nav-link">流量营销</a>
+      <a href="module4.html" class="nav-link">综合实战</a>
+      <a href="resources.html" class="nav-link active">学习资源</a>
+    </nav>
+    <div class="header-actions">
+      <span class="role-badge learner active" onclick="switchRole('learner')">学习者</span>
+      <span class="role-badge teacher" onclick="switchRole('teacher')">讲授者</span>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="border-left: 4px solid #444441;">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">首页</a> / 学习资源库</div>
+    <h1>&#128218; 跨境学习资源库</h1>
+    <p>完整的跨境电商数据分析配套资源，涵盖数据集、报告模板、工具指南、API教程和理实一体化教学素材</p>
+    <div class="page-meta">
+      <span>&#128190; 跨境数据集：<strong>10+个</strong></span>
+      <span>&#128196; 运营模板：<strong>8份</strong></span>
+      <span>&#128295; 工具/API指南：<strong>8份</strong></span>
+      <span>&#128104;&#8205;&#127979; 理实教学包：<strong>5套</strong></span>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- 分类标签 -->
+    <div class="resource-tabs">
+      <button class="rtab" data-tab="datasets" onclick="switchTab('datasets')">&#128190; 跨境数据集</button>
+      <button class="rtab" data-tab="templates" onclick="switchTab('templates')">&#128196; 运营报告模板</button>
+      <button class="rtab" data-tab="tools" onclick="switchTab('tools')">&#128295; 工具与API指南</button>
+      <button class="rtab" data-tab="videos" onclick="switchTab('videos')">&#127916; 教学视频</button>
+      <button class="rtab" data-tab="reading" onclick="switchTab('reading')">&#128214; 推荐阅读</button>
+      <button class="rtab" data-tab="teacher" onclick="switchTab('teacher')">&#128104;&#8205;&#127979; 理实教学包</button>
+    </div>
+
+    <!-- 数据集 -->
+    <div class="resource-section" id="datasets">
+      <h2 style="font-size:16px;font-weight:500;margin-bottom:20px;">跨境练习数据集</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <div class="ri-icon">&#128722;</div>
+          <div class="ri-content">
+            <h4>亚马逊订单与广告综合数据集</h4>
+            <p>某家居品类亚马逊店铺12个月订单数据与PPC广告数据，含SKU、关键词、ACOS、转化率等字段</p>
+            <div class="ri-meta">8万行 · CSV/Excel · 适配模块1/3/4</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#127760;</div>
+          <div class="ri-content">
+            <h4>速卖通竞品与市场分析数据集</h4>
+            <p>俄罗斯市场某品类竞品数据，含价格、销量排名、评价数、评分等字段，适合选品分析练习</p>
+            <div class="ri-meta">5000个ASIN · Excel · 适配模块2/4</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#127760;</div>
+          <div class="ri-content">
+            <h4>Shopify独立站GA流量与订单数据集</h4>
+            <p>某DTC品牌Shopify后台订单数据与Google Analytics流量数据，含渠道来源、转化路径等</p>
+            <div class="ri-meta">6个月记录 · CSV · 适配模块3/4</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128230;</div>
+          <div class="ri-content">
+            <h4>跨境海外仓库存与物流成本数据集</h4>
+            <p>某卖家美国海外仓库存记录与FBA/第三方物流费用明细，适合库存优化与物流成本分析</p>
+            <div class="ri-meta">1年记录 · Excel · 适配模块2/4</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128101;</div>
+          <div class="ri-content">
+            <h4>跨境DTC品牌用户行为与LTV数据集</h4>
+            <p>用户订单序列数据，适合计算LTV、CAC、复购率、RFM用户分层分析</p>
+            <div class="ri-meta">2万用户 · CSV · 适配模块3/4</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128296;</div>
+          <div class="ri-content">
+            <h4>跨境选品评分分析数据集</h4>
+            <p>候选选品列表含需求量、竞争度、物流重量、采购成本等字段，配套选品评分模型练习</p>
+            <div class="ri-meta">200个SKU · Excel · 适配模块2</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128227;</div>
+          <div class="ri-content">
+            <h4>Google Ads与Facebook广告投放数据集</h4>
+            <p>某跨境品牌多渠道广告投放效果数据，含展示、点击、转化、花费等，适合ROI综合分析</p>
+            <div class="ri-meta">6个月日报 · Excel · 适配模块3</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128218;</div>
+          <div class="ri-content">
+            <h4>跨境业务基础练习数据包（入门版）</h4>
+            <p>专为模块一设计的跨境入门数据包，含订单、广告、库存三个小数据集，配套详细字段说明</p>
+            <div class="ri-meta">各100~1000行 · Excel · 适配模块1</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 报告模板 -->
+    <div class="resource-section" id="templates">
+      <h2 style="font-size:16px;font-weight:500;margin-bottom:20px;">跨境运营报告模板</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <div class="ri-icon">&#128196;</div>
+          <div class="ri-content">
+            <h4>亚马逊店铺运营周报/月报PPT模板</h4>
+            <p>含销售概览、广告表现、库存预警、竞品动态、下周计划等章节，专业跨境运营报告框架</p>
+            <div class="ri-meta">PowerPoint · 可商用字体 · 适配所有模块</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128203;</div>
+          <div class="ri-content">
+            <h4>跨境选品决策分析报告模板</h4>
+            <p>市场分析、竞品分析、利润测算、库存建议、风险分析完整框架，含数据填写指引</p>
+            <div class="ri-meta">Word + Excel · 适配模块2</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128202;</div>
+          <div class="ri-content">
+            <h4>跨境广告效果分析仪表板（Excel）</h4>
+            <p>Excel动态仪表板，含PPC核心指标看板、ACOS趋势、关键词表现、广告活动对比</p>
+            <div class="ri-meta">Excel宏文件 · 适配模块3</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128300;</div>
+          <div class="ri-content">
+            <h4>跨境年度经营分析报告模板（完整版）</h4>
+            <p>销售/广告/库存/用户/利润五维综合分析，含图表框架和跨境业务填写指引</p>
+            <div class="ri-meta">PPT + Word · 50页 · 适配模块4</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#9997;</div>
+          <div class="ri-content">
+            <h4>跨境库存预警与补货建议报告模板</h4>
+            <p>库存周转率、库龄分析、安全库存预警、补货建议的标准化报告框架</p>
+            <div class="ri-meta">Word + Excel · 适配模块2</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 工具与API指南 -->
+    <div class="resource-section" id="tools">
+      <h2 style="font-size:16px;font-weight:500;margin-bottom:20px;">跨境工具与API数据获取指南</h2>
+      <div class="resource-list">
+        <div class="resource-item">
+          <div class="ri-icon">&#128722;</div>
+          <div class="ri-content">
+            <h4>亚马逊SP-API数据获取指南</h4>
+            <p>亚马逊 Selling Partner API 申请流程、权限配置、订单/广告数据拉取代码示例（Python）</p>
+            <div class="ri-meta">PDF教程 + Python代码 · 含测试账号说明</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#127760;</div>
+          <div class="ri-content">
+            <h4>速卖通API数据获取指南</h4>
+            <p>速卖通开放平台账号申请、授权流程、商品/订单/评价数据接口调用示例</p>
+            <div class="ri-meta">PDF教程 + Python代码 · 含沙箱测试说明</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#127760;</div>
+          <div class="ri-content">
+            <h4>Shopify Storefront API与订单数据导出</h4>
+            <p>Shopify后台数据导出方法，以及用Storefront API获取产品/订单数据的Python实现</p>
+            <div class="ri-meta">PDF教程 + Python代码 · 适配模块1/3</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128202;</div>
+          <div class="ri-content">
+            <h4>Jungle Scout / Helium 10 数据导出与使用指南</h4>
+            <p>主流选品工具的数据导出方法，以及如何将导出数据用于选品评分分析</p>
+            <div class="ri-meta">PDF图文教程 · 适配模块2</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128187;</div>
+          <div class="ri-content">
+            <h4>Python + Anaconda 跨境数据分析环境配置</h4>
+            <p>Windows/Mac系统安装指南，含pandas/numpy/matplotlib/scikit-learn安装与跨境数据实操</p>
+            <div class="ri-meta">PDF图文教程 · 约30分钟完成</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128200;</div>
+          <div class="ri-content">
+            <h4>Google Analytics 4 跨境电商追踪设置指南</h4>
+            <p>GA4电商事件追踪配置（购买、加购、结账），数据导出与跨境场景分析</p>
+            <div class="ri-meta">PDF图文教程 · 含增强型电商设置</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128295;</div>
+          <div class="ri-content">
+            <h4>Tableau跨境数据可视化快速入门</h4>
+            <p>用Tableau连接跨境数据，制作销售仪表板、广告效果看板、库存监控看板</p>
+            <div class="ri-meta">PDF图文教程 · 含示例数据文件</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128190;</div>
+          <div class="ri-content">
+            <h4>MySQL跨境数据仓库搭建指南</h4>
+            <p>设计跨境电商标准数据表结构（订单表、产品表、广告表、用户表），导入练习数据</p>
+            <div class="ri-meta">SQL脚本 + PDF · 含建表语句</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 教学视频 -->
+    <div class="resource-section" id="videos">
+      <h2 style="font-size:16px;font-weight:500;margin-bottom:16px;">🎬 教学视频资源</h2>
+      <div style="background:#f7fafc;border-radius:12px;padding:20px;margin-bottom:20px;font-size:13px;color:#4a5568;line-height:1.8">
+        💡 <strong>使用提示：</strong>点击任意视频卡片可跳转至对应平台观看。标注「免费」的视频可直接观看；标注「付费」的为精品课程，部分提供免费试看。讲授者可将相关视频作为课前预习或课堂演示素材。
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px;">
+
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
+          <div style="height:160px;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.5rem;">📊</div>
+          <div style="padding:16px;">
+            <div style="display:inline-block;background:#fb7299;color:#fff;font-size:0.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;">Bilibili</div>
+            <div style="font-size:0.9rem;font-weight:600;margin-bottom:6px;line-height:1.5;">跨境电商数据分析全套教程｜从零开始</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;">全套课程 · 约6小时 · 12.3万播放</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">系统讲解跨境电商数据分析基本概念、核心指标、分析思路和实操方法，适合零基础入门。</div>
+            <div style="display:flex;gap:6px;margin-bottom:12px;"><span style="background:#e6fffa;color:#234e52;font-size:0.7rem;padding:2px 8px;border-radius:8px;">免费</span><span style="background:#ebf8ff;color:#2c5282;font-size:0.7rem;padding:2px 8px;border-radius:8px;">中文</span></div>
+            <a href="https://search.bilibili.com/all?keyword=跨境电商数据分析全套教程" target="_blank" style="display:block;width:100%;padding:8px;background:var(--blue-600);color:#fff;border:none;border-radius:6px;font-size:0.85rem;text-align:center;text-decoration:none;">观看视频 →</a>
+          </div>
+        </div>
+
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
+          <div style="height:160px;background:linear-gradient(135deg,#f093fb,#f5576c);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.5rem;">🔢</div>
+          <div style="padding:16px;">
+            <div style="display:inline-block;background:#fb7299;color:#fff;font-size:0.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;">Bilibili</div>
+            <div style="font-size:0.9rem;font-weight:600;margin-bottom:6px;line-height:1.5;">跨境电商核心数据指标详解</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;">单集 · 约45分钟 · 8.7万播放</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">深入讲解转化率、客单价、ACOS、ROAS等20个跨境电商关键数据指标，每个配实际案例。</div>
+            <div style="display:flex;gap:6px;margin-bottom:12px;"><span style="background:#e6fffa;color:#234e52;font-size:0.7rem;padding:2px 8px;border-radius:8px;">免费</span><span style="background:#ebf8ff;color:#2c5282;font-size:0.7rem;padding:2px 8px;border-radius:8px;">中文</span></div>
+            <a href="https://search.bilibili.com/all?keyword=跨境电商核心数据指标详解" target="_blank" style="display:block;width:100%;padding:8px;background:var(--blue-600);color:#fff;border:none;border-radius:6px;font-size:0.85rem;text-align:center;text-decoration:none;">观看视频 →</a>
+          </div>
+        </div>
+
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
+          <div style="height:160px;background:linear-gradient(135deg,#f7971e,#ffd200);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.5rem;">🔍</div>
+          <div style="padding:16px;">
+            <div style="display:inline-block;background:#fb7299;color:#fff;font-size:0.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;">Bilibili</div>
+            <div style="font-size:0.9rem;font-weight:600;margin-bottom:6px;line-height:1.5;">亚马逊选品数据分析实战</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;">全套课程 · 约5小时 · 21.5万播放</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">深度讲解BSR排名解读、评论情感分析、供需缺口判断、价格趋势分析，配有实操演示。</div>
+            <div style="display:flex;gap:6px;margin-bottom:12px;"><span style="background:#fef5e7;color:#c05621;font-size:0.7rem;padding:2px 8px;border-radius:8px;">部分免费</span><span style="background:#ebf8ff;color:#2c5282;font-size:0.7rem;padding:2px 8px;border-radius:8px;">中文</span></div>
+            <a href="https://search.bilibili.com/all?keyword=亚马逊选品数据分析实战" target="_blank" style="display:block;width:100%;padding:8px;background:var(--blue-600);color:#fff;border:none;border-radius:6px;font-size:0.85rem;text-align:center;text-decoration:none;">观看视频 →</a>
+          </div>
+        </div>
+
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
+          <div style="height:160px;background:linear-gradient(135deg,#43e97b,#38f9d7);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.5rem;">📈</div>
+          <div style="padding:16px;">
+            <div style="display:inline-block;background:#fb7299;color:#fff;font-size:0.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;">Bilibili</div>
+            <div style="font-size:0.9rem;font-weight:600;margin-bottom:6px;line-height:1.5;">Excel跨境电商数据分析实战</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;">全套课程 · 约4小时 · 15.1万播放</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">使用Excel进行跨境电商数据分析的完整实战，涵盖数据透视表、函数、图表、仪表盘搭建。</div>
+            <div style="display:flex;gap:6px;margin-bottom:12px;"><span style="background:#e6fffa;color:#234e52;font-size:0.7rem;padding:2px 8px;border-radius:8px;">免费</span><span style="background:#ebf8ff;color:#2c5282;font-size:0.7rem;padding:2px 8px;border-radius:8px;">中文</span></div>
+            <a href="https://search.bilibili.com/all?keyword=Excel跨境电商数据分析实战" target="_blank" style="display:block;width:100%;padding:8px;background:var(--blue-600);color:#fff;border:none;border-radius:6px;font-size:0.85rem;text-align:center;text-decoration:none;">观看视频 →</a>
+          </div>
+        </div>
+
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
+          <div style="height:160px;background:linear-gradient(135deg,#e53e3e,#c53030);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.5rem;">📢</div>
+          <div style="padding:16px;">
+            <div style="display:inline-block;background:#fb7299;color:#fff;font-size:0.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;">Bilibili</div>
+            <div style="font-size:0.9rem;font-weight:600;margin-bottom:6px;line-height:1.5;">亚马逊PPC广告数据分析｜ACOS优化</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;">全套课程 · 约8小时 · 18.9万播放</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">系统讲解亚马逊SP/SB/SD广告数据分析，关键词挖掘、竞价策略、ACOS优化，含实际案例。</div>
+            <div style="display:flex;gap:6px;margin-bottom:12px;"><span style="background:#fef5e7;color:#c05621;font-size:0.7rem;padding:2px 8px;border-radius:8px;">部分免费</span><span style="background:#ebf8ff;color:#2c5282;font-size:0.7rem;padding:2px 8px;border-radius:8px;">中文</span></div>
+            <a href="https://search.bilibili.com/all?keyword=亚马逊PPC广告数据分析ACOS优化" target="_blank" style="display:block;width:100%;padding:8px;background:var(--blue-600);color:#fff;border:none;border-radius:6px;font-size:0.85rem;text-align:center;text-decoration:none;">观看视频 →</a>
+          </div>
+        </div>
+
+        <div style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;">
+          <div style="height:160px;background:linear-gradient(135deg,#95e1d3,#fce38a);display:flex;align-items:center;justify-content:center;color:#fff;font-size:2.5rem;">🎯</div>
+          <div style="padding:16px;">
+            <div style="display:inline-block;background:#fb7299;color:#fff;font-size:0.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;">Bilibili</div>
+            <div style="font-size:0.9rem;font-weight:600;margin-bottom:6px;line-height:1.5;">GA4跨境电商实战｜独立站流量分析</div>
+            <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:8px;">全套课程 · 约6小时 · 11.8万播放</div>
+            <div style="font-size:0.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:10px;">使用GA4进行跨境电商独立站数据分析，事件跟踪、流量渠道分析、转化漏斗、受众报告。</div>
+            <div style="display:flex;gap:6px;margin-bottom:12px;"><span style="background:#fef5e7;color:#c05621;font-size:0.7rem;padding:2px 8px;border-radius:8px;">部分免费</span><span style="background:#ebf8ff;color:#2c5282;font-size:0.7rem;padding:2px 8px;border-radius:8px;">中文</span></div>
+            <a href="https://search.bilibili.com/all?keyword=GA4跨境电商独立站流量分析" target="_blank" style="display:block;width:100%;padding:8px;background:var(--blue-600);color:#fff;border:none;border-radius:6px;font-size:0.85rem;text-align:center;text-decoration:none;">观看视频 →</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center;margin-top:20px;">
+        <a href="videos.html" style="display:inline-block;padding:12px 32px;background:var(--blue-600);color:#fff;border-radius:8px;text-decoration:none;font-size:0.95rem;">查看全部教学视频（共19个）→</a>
+      </div>
+    </div>
+
+    <!-- 推荐阅读 -->
+    <div class="resource-section" id="reading">
+      <h2 style="font-size:16px;font-weight:500;margin-bottom:20px;">跨境数据分析推荐阅读</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;">
+        <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <div style="font-size:11px;font-weight:500;color:var(--blue-600);margin-bottom:8px;">跨境运营</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:8px;">《跨境电商运营实战》</h4>
+          <p style="font-size:12px;color:var(--text-secondary);">系统讲解亚马逊、速卖通等平台运营方法论，数据分析驱动的运营决策实战指南</p>
+          <div style="margin-top:12px;font-size:11px;color:var(--text-muted);">闫敏 · 电子工业出版社</div>
+        </div>
+        <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <div style="font-size:11px;font-weight:500;color:var(--teal-600);margin-bottom:8px;">数据分析</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:8px;">《数据驱动：从方法到实践》</h4>
+          <p style="font-size:12px;color:var(--text-secondary);">将数据分析方法论落地到电商业务场景，含大量电商数据分析实战案例</p>
+          <div style="margin-top:12px;font-size:11px;color:var(--text-muted);">桑文锋 · 电子工业出版社</div>
+        </div>
+        <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <div style="font-size:11px;font-weight:500;color:var(--purple-600);margin-bottom:8px;">亚马逊广告</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:8px;">《亚马逊PPC广告实战手册》</h4>
+          <p style="font-size:12px;color:var(--text-secondary);">深入讲解亚马逊广告数据分析与优化，ACOS降低实战策略，广告报表深度解读</p>
+          <div style="margin-top:12px;font-size:11px;color:var(--text-muted);">Michael Begg · 中文译本</div>
+        </div>
+        <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <div style="font-size:11px;font-weight:500;color:var(--coral-600);margin-bottom:8px;">选品与供应链</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:8px;">《跨境电商供应链管理》</h4>
+          <p style="font-size:12px;color:var(--text-secondary);">海外仓、物流成本、库存优化、供应链风险管理的系统讲解，数据驱动决策视角</p>
+          <div style="margin-top:12px;font-size:11px;color:var(--text-muted);">柴邵炜 · 中国人民大学出版社</div>
+        </div>
+        <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <div style="font-size:11px;font-weight:500;color:var(--amber-600);margin-bottom:8px;">独立站</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:8px;">《Shopify独立站运营与数据分析》</h4>
+          <p style="font-size:12px;color:var(--text-secondary);">从建站到数据分析的全流程指南，GA追踪配置、转化优化、用户行为分析的实战讲解</p>
+          <div style="margin-top:12px;font-size:11px;color:var(--text-muted);">雨果跨境 · 在线课程配套教材</div>
+        </div>
+        <div style="background:var(--white);border:0.5px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+          <div style="font-size:11px;font-weight:500;color:var(--blue-600);margin-bottom:8px;">在线资源</div>
+          <h4 style="font-size:14px;font-weight:500;margin-bottom:8px;">推荐在线学习资源</h4>
+          <p style="font-size:12px;color:var(--text-secondary);">亚马逊广告学院（免费认证）、Google Skillshop（免费）、雨果跨境学院、B站跨境数据分析教程</p>
+          <div style="margin-top:12px;font-size:11px;color:var(--text-muted);">多平台 · 部分免费认证</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 讲授者资源 -->
+    <div class="resource-section" id="teacher">
+      <h2 style="font-size:16px;font-weight:500;margin-bottom:20px;">理实一体化教学专属资源</h2>
+      <div style="background:var(--blue-50);border-radius:var(--radius-lg);padding:20px;margin-bottom:20px;border:0.5px solid var(--border);">
+        <p style="font-size:13px;color:var(--text-secondary);">以下资源专为跨境电商数据分析课程讲授者设计，包含完整的理实一体化教学设计文档、讲义、实操任务书、习题答案和评分标准。</p>
+      </div>
+      <div class="resource-list">
+        <div class="resource-item">
+          <div class="ri-icon">&#128195;</div>
+          <div class="ri-content">
+            <h4>模块一：跨境数据基础 理实教学包</h4>
+            <p>含教学大纲、PPT讲义(5单元)、课堂实操任务书、跨境电商数据导览练习答案、课后题答案</p>
+            <div class="ri-meta">ZIP压缩包 · 含所有教学文件</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128195;</div>
+          <div class="ri-content">
+            <h4>模块二：选品与供应链分析 理实教学包</h4>
+            <p>含教学大纲、PPT讲义(6单元)、选品评分实操任务书、利润测算Excel模板教师版、课堂展示素材</p>
+            <div class="ri-meta">ZIP压缩包 · 含所有教学文件</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128214;</div>
+          <div class="ri-content">
+            <h4>模块二实操教学参考与实训详解（完整版）</h4>
+            <p>含6个单元的教学参考（教学目标、核心知识点、常见错误预判、课堂活动设计）+ 4个实操任务的逐步详解（含公式说明、Excel操作、参考答案、评分标准）</p>
+            <div class="ri-meta">HTML文档 · 可直接浏览器阅读或打印PDF</div>
+          </div>
+          <div class="ri-action"><a href="teacher/模块二实操教学参考与详解.html" target="_blank">&#8595; 打开</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128195;</div>
+          <div class="ri-content">
+            <h4>模块三：流量与营销分析 理实教学包</h4>
+            <p>含教学大纲、PPT讲义(5单元)、PPC广告数据分析代码解析、广告优化实操任务书、教师版参考报告</p>
+            <div class="ri-meta">ZIP压缩包 · 含所有教学文件</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128195;</div>
+          <div class="ri-content">
+            <h4>模块四：综合实战 理实教学包（含评分量规）</h4>
+            <p>含8个案例的教师版参考解析报告、项目分组指导建议、学生互评表、期末综合考核评分量规</p>
+            <div class="ri-meta">ZIP压缩包 · 含评分量规Excel</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <!-- 新添加：参考答案与详解 -->
+        <div class="resource-item">
+          <div class="ri-icon">&#128208;</div>
+          <div class="ri-content">
+            <h4>📘 模块一：跨境数据基础 练习题参考答案与详解</h4>
+            <p>含10道单选+5道判断+5道填空+3道简答的完整答案、详细解析、常见错误预判、评分标准</p>
+            <div class="ri-meta">HTML文档 · 教师版 · 可直接打印PDF</div>
+          </div>
+          <div class="ri-action"><a href="teacher/模块一练习题参考答案与详解.html" target="_blank">&#8595; 打开</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128208;</div>
+          <div class="ri-content">
+            <h4>📘 模块二：选品与供应链 实操参考答案与详解（任务一二）</h4>
+            <p>含任务一（选品分析）+ 任务二（竞品价格监控）操作详解、Excel步骤、2份企业级分析报告范例</p>
+            <div class="ri-meta">HTML文档 · 含企业决策级报告范例</div>
+          </div>
+          <div class="ri-action"><a href="teacher/模块二实操参考答案与详解（任务一二）.html" target="_blank">&#8595; 打开</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128208;</div>
+          <div class="ri-content">
+            <h4>📘 模块二：选品与供应链 实操参考答案与详解（任务三四）</h4>
+            <p>含任务三（海外仓库存优化）+ 任务四（蓝海关键词分析）操作详解、2份企业级库存/关键词分析报告范例</p>
+            <div class="ri-meta">HTML文档 · 含企业决策级报告范例</div>
+          </div>
+          <div class="ri-action"><a href="teacher/模块二实操参考答案与详解（任务三四）.html" target="_blank">&#8595; 打开</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128208;</div>
+          <div class="ri-content">
+            <h4>📘 模块三：流量与营销分析 练习题参考答案与详解</h4>
+            <p>含10道单选+2道案例分析+2道实操题完整答案、GA4/Excel操作步骤、评分标准</p>
+            <div class="ri-meta">HTML文档 · 教师版 · 可直接打印PDF</div>
+          </div>
+          <div class="ri-action"><a href="teacher/模块三练习题参考答案与详解.html" target="_blank">&#8595; 打开</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128208;</div>
+          <div class="ri-content">
+            <h4>📘 模块四：综合实战 参考答案与企业级数据分析报告</h4>
+            <p>含案例A（亚马逊新品上市）+ 案例B（Shopify流量诊断）+ 案例C（多平台布局）3份完整企业级决策报告范例、综合评分量规</p>
+            <div class="ri-meta">HTML文档 · 学生报告撰写规范参考</div>
+          </div>
+          <div class="ri-action"><a href="teacher/模块四综合实战参考答案与报告.html" target="_blank">&#8595; 打开</a></div>
+        </div>
+        <!-- 原有内容继续 -->
+        <div class="resource-item">
+          <div class="ri-icon">&#128206;</div>
+          <div class="ri-content">
+            <h4>完整理实一体化课程大纲（52课时版）</h4>
+            <p>可用于学期课程的完整教学大纲，含理论课时/实操课时分配、教学目标、考核方式、理实一体化教学设计说明</p>
+            <div class="ri-meta">Word文档 · 含课程设计说明</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+        <div class="resource-item">
+          <div class="ri-icon">&#128221;</div>
+          <div class="ri-content">
+            <h4>期末综合实战考核试题库（跨境场景）</h4>
+            <p>含客观题、案例分析题、实操题三类题型，共120题，全部基于跨境真实业务场景，含参考答案</p>
+            <div class="ri-meta">Word文档 · 保密使用</div>
+          </div>
+          <div class="ri-action"><a href="#">&#8595; 下载</a></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">跨境电商数据分析实训平台</div>
+        <p class="footer-desc">理实一体 · 跨境场景 · 项目驱动</p>
+      </div>
+      <div>
+        <div class="footer-title">学习模块</div>
+        <a href="module1.html">跨境电商数据基础</a>
+        <a href="module2.html">选品与供应链分析</a>
+        <a href="module3.html">流量与营销分析</a>
+        <a href="module4.html">综合实战项目</a>
+      </div>
+      <div>
+        <div class="footer-title">学习资源</div>
+        <a href="resources.html#datasets">跨境数据集</a>
+        <a href="resources.html#templates">运营报告模板</a>
+        <a href="resources.html#tools">API数据获取</a>
+        <a href="resources.html#teacher">理实教学包</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 跨境电商数据分析实训平台 · 理实一体化教学</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

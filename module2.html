@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>选品与供应链分析 - 跨境电商数据分析实训平台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">&#9638;</span>
+      <span class="logo-text">跨境电商数据分析实训平台</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">平台首页</a>
+      <a href="module1.html" class="nav-link">数据基础</a>
+      <a href="module2.html" class="nav-link active">选品分析</a>
+      <a href="module3.html" class="nav-link">流量营销</a>
+      <a href="module4.html" class="nav-link">综合实战</a>
+      <a href="resources.html" class="nav-link">学习资源</a>
+    </nav>
+    <div class="header-actions">
+      <span class="role-badge learner active" onclick="switchRole('learner')">学习者</span>
+      <span class="role-badge teacher" onclick="switchRole('teacher')">讲授者</span>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="border-left: 4px solid #0F6E56;">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">首页</a> / 模块二</div>
+    <h1>&#128202; 选品与供应链分析</h1>
+    <p>掌握跨境选品数据分析方法，学会用数据挖掘爆款潜力品，优化库存与物流成本，提升供应链效率</p>
+    <div class="page-meta">
+      <span>&#128336; 建议学时：<strong>14课时</strong></span>
+      <span>&#128218; 知识单元：<strong>6个</strong></span>
+      <span>&#127358; 难度：<strong>初级进阶</strong></span>
+    </div>
+    <div class="module-progress">
+      <div class="mp-step done"></div>
+      <div class="mp-step current"></div>
+      <div class="mp-step"></div>
+      <div class="mp-step"></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- 流程总览 -->
+    <div id="selection" style="background:var(--white);border-radius:var(--radius-xl);border:0.5px solid var(--border);padding:32px;margin-bottom:40px;">
+      <h2 style="font-size:15px;font-weight:500;margin-bottom:24px;">&#128205; 跨境选品与供应链分析流程</h2>
+      <div style="display:flex;align-items:center;gap:0;overflow-x:auto;padding-bottom:8px;">
+        <div class="flow-step" style="background:#E6F1FB;border-radius:12px;padding:16px 20px;min-width:130px;text-align:center;flex-shrink:0;">
+          <div style="font-size:22px;margin-bottom:6px;">&#128269;</div>
+          <div style="font-size:13px;font-weight:500;color:#185FA5;">市场机会发现</div>
+          <div style="font-size:11px;color:#5F5E5A;margin-top:4px;">需求/竞争分析</div>
+        </div>
+        <div style="font-size:18px;color:#B4B2A9;flex-shrink:0;padding:0 8px;">&#8594;</div>
+        <div class="flow-step" style="background:#E1F5EE;border-radius:12px;padding:16px 20px;min-width:130px;text-align:center;flex-shrink:0;">
+          <div style="font-size:22px;margin-bottom:6px;">&#128296;</div>
+          <div style="font-size:13px;font-weight:500;color:#0F6E56;">选品评分筛选</div>
+          <div style="font-size:11px;color:#5F5E5A;margin-top:4px;">多维评分模型</div>
+        </div>
+        <div style="font-size:18px;color:#B4B2A9;flex-shrink:0;padding:0 8px;">&#8594;</div>
+        <div class="flow-step" style="background:#FAEEDA;border-radius:12px;padding:16px 20px;min-width:130px;text-align:center;flex-shrink:0;">
+          <div style="font-size:22px;margin-bottom:6px;">&#128176;</div>
+          <div style="font-size:13px;font-weight:500;color:#854F0B;">利润测算</div>
+          <div style="font-size:11px;color:#5F5E5A;margin-top:4px;">成本/定价/毛利</div>
+        </div>
+        <div style="font-size:18px;color:#B4B2A9;flex-shrink:0;padding:0 8px;">&#8594;</div>
+        <div class="flow-step" style="background:#EEEDFE;border-radius:12px;padding:16px 20px;min-width:130px;text-align:center;flex-shrink:0;">
+          <div style="font-size:22px;margin-bottom:6px;">&#128230;</div>
+          <div style="font-size:13px;font-weight:500;color:#534AB7;">库存优化</div>
+          <div style="font-size:11px;color:#5F5E5A;margin-top:4px;">安全库存/周转率</div>
+        </div>
+        <div style="font-size:18px;color:#B4B2A9;flex-shrink:0;padding:0 8px;">&#8594;</div>
+        <div class="flow-step" style="background:#FAECE7;border-radius:12px;padding:16px 20px;min-width:130px;text-align:center;flex-shrink:0;">
+          <div style="font-size:22px;margin-bottom:6px;">&#128666;</div>
+          <div style="font-size:13px;font-weight:500;color:#993C1D;">物流成本分析</div>
+          <div style="font-size:11px;color:#5F5E5A;margin-top:4px;">海外仓/直邮选择</div>
+        </div>
+        <div style="font-size:18px;color:#B4B2A9;flex-shrink:0;padding:0 8px;">&#8594;</div>
+        <div class="flow-step" style="background:#EAF3DE;border-radius:12px;padding:16px 20px;min-width:130px;text-align:center;flex-shrink:0;">
+          <div style="font-size:22px;margin-bottom:6px;">&#128202;</div>
+          <div style="font-size:13px;font-weight:500;color:#3B6D11;">选品决策报告</div>
+          <div style="font-size:11px;color:#5F5E5A;margin-top:4px;">数据支撑决策</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 单元列表 -->
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:24px;">课程单元（理实一体化设计）</h2>
+    <div class="units-grid">
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 2-1</div>
+          <h3>跨境市场机会分析方法</h3>
+          <p>学习用Google Trends、Jungle Scout、平台榜单等工具分析目标市场供需关系，发现蓝海品类与潜力市场</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>用Google Trends分析品类搜索趋势</li>
+            <li>用Jungle Scout评估亚马逊市场容量</li>
+            <li>分析竞品销量与评价挖掘市场机会</li>
+            <li>制作市场机会分析报告</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 市场分析实操 35min</span>
+          <span class="res-tag doc">&#128196; 市场分析检查清单</span>
+          <span class="res-tag exercise">&#9997; 选品机会挖掘练习</span>
+        </div>
+      </div>
+
+      <div class="unit-card" id="selection">
+        <div class="unit-header">
+          <div class="unit-num">单元 2-2</div>
+          <h3>选品评分模型与数据筛选</h3>
+          <p>建立科学的选品评分体系，从需求量、竞争度、利润空间、物流可行性等多维度对候选品进行数据化筛选</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>设计选品多维评分模型</li>
+            <li>用Excel构建选品评分表</li>
+            <li>掌握BSR排名与销量估算方法</li>
+            <li>用数据筛选决策是否上架</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 评分模型讲解 30min</span>
+          <span class="res-tag data">&#128190; 选品候选数据表</span>
+          <span class="res-tag code">&#128187; 选品评分Excel模板</span>
+          <span class="res-tag exercise">&#9997; 选品评分实操</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 2-3</div>
+          <h3>跨境利润测算与定价策略</h3>
+          <p>掌握跨境全链路成本结构（采购、物流、平台佣金、广告、税费），建立利润测算模型，制定科学定价策略</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>掌握跨境全链路成本构成</li>
+            <li>用Excel建立利润测算模型</li>
+            <li>理解不同定价策略的优劣</li>
+            <li>计算盈亏平衡销量</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 利润测算演示 35min</span>
+          <span class="res-tag data">&#128190; 成本数据练习表</span>
+          <span class="res-tag code">&#128187; 利润测算Excel模板</span>
+          <span class="res-tag exercise">&#9997; 定价策略作业</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 2-4</div>
+          <h3>库存管理与周转率分析</h3>
+          <p>学习跨境库存管理核心指标，掌握安全库存计算、库存周转率分析、滞销品识别与处理策略</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>计算库存周转率与库龄</li>
+            <li>建立安全库存计算模型</li>
+            <li>识别滞销品并制定处理方案</li>
+            <li>用数据优化补货决策</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 库存分析讲解 30min</span>
+          <span class="res-tag data">&#128190; 库存数据练习集</span>
+          <span class="res-tag code">&#128187; 库存管理Excel模板</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 2-5</div>
+          <h3>跨境物流成本分析与海外仓选择</h3>
+          <p>对比直邮、第三方海外仓、平台仓（FBA）的成本结构与时效，用数据支撑物流方案决策</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>掌握跨境物流成本构成</li>
+            <li>对比FBA与第三方海外仓优劣</li>
+            <li>建立物流成本测算模型</li>
+            <li>制定分SKU的物流策略</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 物流成本分析 30min</span>
+          <span class="res-tag doc">&#128196; 物流方案对比表</span>
+          <span class="res-tag exercise">&#9997; 物流方案决策练习</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 2-6</div>
+          <h3>选品决策数据分析报告</h3>
+          <p>综合运用本模块所学，完成一份完整的选品决策分析报告，包含市场分析、竞品分析、利润测算和库存建议</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>整合多维选品分析数据</li>
+            <li>用数据支撑选品决策结论</li>
+            <li>制作专业选品分析报告</li>
+            <li>完成选品决策汇报演练</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 报告撰写讲解 25min</span>
+          <span class="res-tag doc">&#128196; 选品报告PPT模板</span>
+          <span class="res-tag exercise">&#9997; 综合选品报告作业</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:40px;background:var(--teal-50);border-radius:var(--radius-xl);padding:28px;border:0.5px solid var(--border);">
+      <h3 style="font-size:15px;font-weight:500;margin-bottom:12px;color:#085041;">&#127919; 模块学习检验</h3>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:16px;">完成本模块后，你应该能够：对一个候选跨境品类完成全套数据分析，包括市场机会评估、选品评分、利润测算、库存规划和物流方案选择，并输出决策报告。</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="resources.html#templates" style="font-size:13px;color:#0F6E56;padding:8px 16px;border:0.5px solid #0F6E56;border-radius:8px;">&#128196; 下载选品分析模板</a>
+        <a href="module3.html" style="font-size:13px;color:var(--white);background:#0F6E56;padding:8px 16px;border-radius:8px;">进入模块三 &#8594;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">跨境电商数据分析实训平台</div>
+        <p class="footer-desc">理实一体 · 跨境场景 · 项目驱动</p>
+      </div>
+      <div>
+        <div class="footer-title">学习模块</div>
+        <a href="module1.html">跨境电商数据基础</a>
+        <a href="module2.html">选品与供应链分析</a>
+        <a href="module3.html">流量与营销分析</a>
+        <a href="module4.html">综合实战项目</a>
+      </div>
+      <div>
+        <div class="footer-title">学习资源</div>
+        <a href="resources.html#datasets">跨境数据集</a>
+        <a href="resources.html#templates">运营报告模板</a>
+        <a href="resources.html#tools">API数据获取</a>
+        <a href="resources.html#teacher">理实教学包</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 跨境电商数据分析实训平台 · 理实一体化教学</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

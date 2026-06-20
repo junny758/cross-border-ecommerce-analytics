@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>流量与营销分析 - 跨境电商数据分析实训平台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">&#9638;</span>
+      <span class="logo-text">跨境电商数据分析实训平台</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">平台首页</a>
+      <a href="module1.html" class="nav-link">数据基础</a>
+      <a href="module2.html" class="nav-link">选品分析</a>
+      <a href="module3.html" class="nav-link active">流量营销</a>
+      <a href="module4.html" class="nav-link">综合实战</a>
+      <a href="resources.html" class="nav-link">学习资源</a>
+    </nav>
+    <div class="header-actions">
+      <span class="role-badge learner active" onclick="switchRole('learner')">学习者</span>
+      <span class="role-badge teacher" onclick="switchRole('teacher')">讲授者</span>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="border-left: 4px solid #534AB7;">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">首页</a> / 模块三</div>
+    <h1>&#128293; 流量与营销数据分析</h1>
+    <p>掌握跨境广告投放效果分析、SEO/SEM数据追踪、社媒营销ROI评估，用数据驱动流量增长与转化提升</p>
+    <div class="page-meta">
+      <span>&#128336; 建议学时：<strong>14课时</strong></span>
+      <span>&#128218; 知识单元：<strong>5个</strong></span>
+      <span>&#127358; 难度：<strong>中级进阶</strong></span>
+    </div>
+    <div class="module-progress">
+      <div class="mp-step done"></div>
+      <div class="mp-step done"></div>
+      <div class="mp-step current"></div>
+      <div class="mp-step"></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- 技能提升提示 -->
+    <div style="background:var(--purple-50);border-radius:var(--radius-xl);border:0.5px solid var(--border);padding:28px;margin-bottom:36px;">
+      <h2 style="font-size:15px;font-weight:500;margin-bottom:12px;color:#3C3489;">本模块将提升以下跨境营销分析能力</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;">
+        <div style="background:rgba(255,255,255,0.7);border-radius:8px;padding:12px;text-align:center;">
+          <div style="font-size:20px;">&#128227;</div>
+          <div style="font-size:12px;font-weight:500;margin-top:6px;">广告效果分析</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.7);border-radius:8px;padding:12px;text-align:center;">
+          <div style="font-size:20px;">&#128270;</div>
+          <div style="font-size:12px;font-weight:500;margin-top:6px;">转化漏斗诊断</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.7);border-radius:8px;padding:12px;text-align:center;">
+          <div style="font-size:20px;">&#128202;</div>
+          <div style="font-size:12px;font-weight:500;margin-top:6px;">ROI优化</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.7);border-radius:8px;padding:12px;text-align:center;">
+          <div style="font-size:20px;">&#127760;</div>
+          <div style="font-size:12px;font-weight:500;margin-top:6px;">SEO/SEM分析</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.7);border-radius:8px;padding:12px;text-align:center;">
+          <div style="font-size:20px;">&#128172;</div>
+          <div style="font-size:12px;font-weight:500;margin-top:6px;">社媒数据分析</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:24px;">课程单元（理实一体化设计）</h2>
+    <div class="units-grid">
+
+      <div class="unit-card" id="ads">
+        <div class="unit-header">
+          <div class="unit-num">单元 3-1</div>
+          <h3>亚马逊PPC广告数据分析</h3>
+          <p>深入分析亚马逊SP/SB/SD广告数据，掌握ACOS、ROAS、CTR、CVR等核心广告指标的计算与优化方法</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>解读亚马逊广告报表各字段含义</li>
+            <li>计算并优化ACOS与ROAS</li>
+            <li>分析关键词表现并优化出价</li>
+            <li>制作广告效果周报/月报</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; PPC数据分析 45min</span>
+          <span class="res-tag data">&#128190; 亚马逊广告数据练习集</span>
+          <span class="res-tag code">&#128187; 广告分析Excel模板</span>
+          <span class="res-tag exercise">&#9997; ACOS优化实操</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 3-2</div>
+          <h3>跨境转化漏斗分析与优化</h3>
+          <p>建立从曝光→点击→加购→下单→支付的完整转化漏斗，定位流失关键节点，提出针对性优化方案</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>构建跨境转化漏斗模型</li>
+            <li>计算各阶段转化率</li>
+            <li>定位漏斗流失关键节点</li>
+            <li>提出数据驱动的优化建议</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 漏斗分析讲解 35min</span>
+          <span class="res-tag data">&#128190; 用户行为数据集</span>
+          <span class="res-tag code">&#128187; 漏斗分析代码</span>
+          <span class="res-tag exercise">&#9997; 漏斗诊断作业</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 3-3</div>
+          <h3>Google Ads与Facebook广告ROI分析</h3>
+          <p>掌握Google搜索广告、Shopping广告与Facebook/Instagram社媒广告的效果数据分析与ROI优化方法</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>解读Google Ads核心指标</li>
+            <li>分析Facebook广告受众与创意表现</li>
+            <li>计算多渠道综合ROI</li>
+            <li>制定预算分配优化方案</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 跨境广告分析 40min</span>
+          <span class="res-tag doc">&#128196; 广告指标对照表</span>
+          <span class="res-tag exercise">&#9997; 多渠道ROI计算</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 3-4</div>
+          <h3>SEO/SEM数据分析与关键词策略</h3>
+          <p>学习用Google Search Console、Ahrefs、SEMrush等工具分析跨境SEO表现，优化关键词策略提升自然流量</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>分析关键词搜索量/难度/意图</li>
+            <li>追踪自然搜索排名变化</li>
+            <li>分析竞品SEO策略</li>
+            <li>制定关键词优化方案</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; SEO数据分析 35min</span>
+          <span class="res-tag doc">&#128196; SEO分析检查清单</span>
+          <span class="res-tag code">&#128187; 关键词分析模板</span>
+        </div>
+      </div>
+
+      <div class="unit-card">
+        <div class="unit-header">
+          <div class="unit-num">单元 3-5</div>
+          <h3>社媒营销数据分析与KOL效果评估</h3>
+          <p>掌握Facebook/Instagram/TikTok等社媒平台营销数据分析，评估KOL合作效果，优化社媒营销策略</p>
+        </div>
+        <div class="unit-objectives">
+          <h4>学习目标</h4>
+          <ul class="obj-list">
+            <li>分析社媒内容互动数据</li>
+            <li>评估KOL合作ROI</li>
+            <li>追踪社媒引流转化路径</li>
+            <li>制定社媒数据分析报告</li>
+          </ul>
+        </div>
+        <div class="unit-resources">
+          <span class="res-tag video">&#9654; 社媒数据分析 30min</span>
+          <span class="res-tag doc">&#128196; KOL效果评估表</span>
+          <span class="res-tag exercise">&#9997; 社媒效果分析作业</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:40px;background:var(--purple-50);border-radius:var(--radius-xl);padding:28px;border:0.5px solid var(--border);">
+      <h3 style="font-size:15px;font-weight:500;margin-bottom:12px;color:#3C3489;">&#127919; 模块学习检验</h3>
+      <p style="font-size:13px;color:var(--text-secondary);margin-bottom:16px;">完成本模块后，你应该能够：独立分析亚马逊PPC广告数据并提出优化方案，同时完成Google Ads与Facebook广告的ROI综合分析报告。</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="resources.html" style="font-size:13px;color:#534AB7;padding:8px 16px;border:0.5px solid #534AB7;border-radius:8px;">&#128202; 查看营销分析资源</a>
+        <a href="module4.html" style="font-size:13px;color:var(--white);background:#534AB7;padding:8px 16px;border-radius:8px;">进入模块四 &#8594;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">跨境电商数据分析实训平台</div>
+        <p class="footer-desc">理实一体 · 跨境场景 · 项目驱动</p>
+      </div>
+      <div>
+        <div class="footer-title">学习模块</div>
+        <a href="module1.html">跨境电商数据基础</a>
+        <a href="module2.html">选品与供应链分析</a>
+        <a href="module3.html">流量与营销分析</a>
+        <a href="module4.html">综合实战项目</a>
+      </div>
+      <div>
+        <div class="footer-title">学习资源</div>
+        <a href="resources.html#datasets">跨境数据集</a>
+        <a href="resources.html#templates">运营报告模板</a>
+        <a href="resources.html#tools">API数据获取</a>
+        <a href="resources.html#teacher">理实教学包</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 跨境电商数据分析实训平台 · 理实一体化教学</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

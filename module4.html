@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>综合实战项目 - 跨境电商数据分析实训平台</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <span class="logo-icon">&#9638;</span>
+      <span class="logo-text">跨境电商数据分析实训平台</span>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">平台首页</a>
+      <a href="module1.html" class="nav-link">数据基础</a>
+      <a href="module2.html" class="nav-link">选品分析</a>
+      <a href="module3.html" class="nav-link">流量营销</a>
+      <a href="module4.html" class="nav-link active">综合实战</a>
+      <a href="resources.html" class="nav-link">学习资源</a>
+    </nav>
+    <div class="header-actions">
+      <span class="role-badge learner active" onclick="switchRole('learner')">学习者</span>
+      <span class="role-badge teacher" onclick="switchRole('teacher')">讲授者</span>
+    </div>
+  </div>
+</header>
+
+<div class="page-hero" style="border-left: 4px solid #993C1D;">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html">首页</a> / 模块四</div>
+    <h1>&#127942; 跨境综合实战项目</h1>
+    <p>真实跨境业务场景综合项目，融合前三个模块所学技能，完成从问题定义到决策建议的完整分析闭环</p>
+    <div class="page-meta">
+      <span>&#128336; 建议学时：<strong>20课时</strong></span>
+      <span>&#128218; 实战案例：<strong>8个</strong></span>
+      <span>&#127358; 难度：<strong>综合应用</strong></span>
+    </div>
+    <div class="module-progress">
+      <div class="mp-step done"></div>
+      <div class="mp-step done"></div>
+      <div class="mp-step done"></div>
+      <div class="mp-step current"></div>
+    </div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <!-- 实战说明 -->
+    <div style="background:var(--coral-50);border-radius:var(--radius-xl);border:0.5px solid var(--border);padding:24px;margin-bottom:36px;display:flex;gap:20px;align-items:flex-start;">
+      <div style="font-size:32px;flex-shrink:0;">&#128221;</div>
+      <div>
+        <h3 style="font-size:15px;font-weight:500;margin-bottom:8px;color:#712B13;">理实一体化实战项目说明</h3>
+        <p style="font-size:13px;color:var(--text-secondary);line-height:1.7;">每个案例均配套真实或高度仿真的跨境电商数据集、完整的项目背景说明、分步骤分析任务清单和教师版参考解析。学习者按照"读题 → 探索数据 → 分析建模 → 报告输出"四步完成实战。讲授者可利用配套教学包进行课堂讲评与分组指导。</p>
+      </div>
+    </div>
+
+    <!-- 案例卡片 -->
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:24px;">跨境实战案例库</h2>
+    <div class="case-grid">
+
+      <!-- 案例1 -->
+      <div class="case-card" id="amazon">
+        <div class="case-banner ecommerce"></div>
+        <div class="case-body">
+          <div class="case-category ecommerce">&#128722; 亚马逊运营</div>
+          <h3>亚马逊美国站某品类店铺运营综合分析</h3>
+          <p class="case-desc">基于某家居品类亚马逊店铺12个月的订单、广告、库存、评价数据，全面分析运营表现，提出增长策略</p>
+          <div class="case-info">
+            <span>&#128190; 数据：订单+广告+库存</span>
+            <span>&#128336; 约8课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">指标分析</span>
+            <span class="skill-tag">广告优化</span>
+            <span class="skill-tag">库存诊断</span>
+            <span class="skill-tag">竞品对比</span>
+            <span class="skill-tag">增长策略</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例2 -->
+      <div class="case-card">
+        <div class="case-banner retail"></div>
+        <div class="case-body">
+          <div class="case-category retail">&#127760; 速卖通运营</div>
+          <h3>速卖通俄罗斯市场选品与定价策略分析</h3>
+          <p class="case-desc">分析速卖通俄罗斯市场某品类竞争态势，用数据支撑选品决策与定价策略，制定市场进入方案</p>
+          <div class="case-info">
+            <span>&#128190; 数据：竞品+市场+成本</span>
+            <span>&#128336; 约6课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">市场分析</span>
+            <span class="skill-tag">选品评分</span>
+            <span class="skill-tag">定价模型</span>
+            <span class="skill-tag">竞争分析</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例3 -->
+      <div class="case-card">
+        <div class="case-banner finance"></div>
+        <div class="case-body">
+          <div class="case-category finance">&#127760; 独立站（Shopify）</div>
+          <h3>Shopify独立站流量与转化综合诊断</h3>
+          <p class="case-desc">基于Shopify独立站GA数据与订单数据，诊断流量获取、转化漏斗、复购率等核心问题，提出优化方案</p>
+          <div class="case-info">
+            <span>&#128190; 数据：GA+订单+社媒</span>
+            <span>&#128336; 约8课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">流量分析</span>
+            <span class="skill-tag">漏斗诊断</span>
+            <span class="skill-tag">复购分析</span>
+            <span class="skill-tag">GA数据追踪</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例4 -->
+      <div class="case-card">
+        <div class="case-banner marketing"></div>
+        <div class="case-body">
+          <div class="case-category marketing">&#128227; 广告投放</div>
+          <h3>亚马逊+PPC多品类广告账户ROI优化实战</h3>
+          <p class="case-desc">分析某跨境卖家多品类、多campaign的广告投放数据，识别低效广告组，优化预算分配，提升整体ROAS</p>
+          <div class="case-info">
+            <span>&#128190; 数据：广告报表+订单</span>
+            <span>&#128336; 约6课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">ACOS优化</span>
+            <span class="skill-tag">关键词分析</span>
+            <span class="skill-tag">预算分配</span>
+            <span class="skill-tag">广告报告</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例5 -->
+      <div class="case-card" id="supply">
+        <div class="case-banner supply"></div>
+        <div class="case-body">
+          <div class="case-category supply">&#128230; 供应链</div>
+          <h3>跨境海外仓库存优化与物流成本分析</h3>
+          <p class="case-desc">分析某跨境卖家美国海外仓的库存结构、周转率与物流成本，制定库存优化方案与物流策略</p>
+          <div class="case-info">
+            <span>&#128190; 数据：库存+物流+订单</span>
+            <span>&#128336; 约6课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">库存分析</span>
+            <span class="skill-tag">周转率</span>
+            <span class="skill-tag">物流成本</span>
+            <span class="skill-tag">FBA对比</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例6 -->
+      <div class="case-card">
+        <div class="case-banner ecommerce"></div>
+        <div class="case-body">
+          <div class="case-category ecommerce">&#128101; 用户运营</div>
+          <h3>跨境DTC品牌用户生命周期价值（LTV）分析</h3>
+          <p class="case-desc">基于DTC品牌用户订单数据，计算用户LTV、CAC，分析复购行为，制定用户分层运营策略</p>
+          <div class="case-info">
+            <span>&#128190; 数据：用户订单+行为</span>
+            <span>&#128336; 约8课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">LTV计算</span>
+            <span class="skill-tag">CAC分析</span>
+            <span class="skill-tag">RFM分层</span>
+            <span class="skill-tag">复购分析</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例7 -->
+      <div class="case-card">
+        <div class="case-banner retail"></div>
+        <div class="case-body">
+          <div class="case-category retail">&#128202; 竞品分析</div>
+          <h3>亚马逊Best Sellers竞品数据与策略逆向分析</h3>
+          <p class="case-desc">用Jungle Scout等工具获取竞品数据，分析头部竞品的定价、评论、广告策略，制定差异化竞争方案</p>
+          <div class="case-info">
+            <span>&#128190; 数据：竞品抓取数据</span>
+            <span>&#128336; 约6课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">竞品分析</span>
+            <span class="skill-tag">数据抓取</span>
+            <span class="skill-tag">差异化策略</span>
+            <span class="skill-tag">价格分析</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+      <!-- 案例8 -->
+      <div class="case-card">
+        <div class="case-banner finance"></div>
+        <div class="case-body">
+          <div class="case-category finance">&#128300; 综合运营</div>
+          <h3>跨境电商品牌年度经营数据综合分析</h3>
+          <p class="case-desc">综合运用本平台所有技能，对跨境电商品牌的销售、广告、库存、用户、利润进行全面分析，输出年度经营决策报告</p>
+          <div class="case-info">
+            <span>&#128190; 多维度综合数据集</span>
+            <span>&#128336; 约10课时</span>
+          </div>
+          <div class="case-skills">
+            <span class="skill-tag">综合分析</span>
+            <span class="skill-tag">仪表板</span>
+            <span class="skill-tag">战略建议</span>
+            <span class="skill-tag">完整报告</span>
+          </div>
+        </div>
+        <div class="case-footer">
+          <span style="font-size:12px;color:var(--text-muted);">综合难度 ★★★★★</span>
+          <a href="resources.html#datasets">&#128190; 获取数据集</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 能力评估 -->
+    <div style="margin-top:40px;background:var(--coral-50);border-radius:var(--radius-xl);padding:28px;border:0.5px solid var(--border);">
+      <h3 style="font-size:15px;font-weight:500;margin-bottom:12px;color:#712B13;">&#127919; 实战能力评估标准</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:20px;">
+        <div>
+          <div style="font-size:12px;font-weight:500;color:#993C1D;margin-bottom:6px;">&#9312; 跨境业务理解</div>
+          <p style="font-size:12px;color:var(--text-secondary);">理解跨境电商业务模式与数据体系，能准确理解跨境业务分析需求</p>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:500;color:#993C1D;margin-bottom:6px;">&#9313; 分析方案设计</div>
+          <p style="font-size:12px;color:var(--text-secondary);">能针对跨境场景设计合理的分析路径和指标体系</p>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:500;color:#993C1D;margin-bottom:6px;">&#9314; 工具实操能力</div>
+          <p style="font-size:12px;color:var(--text-secondary);">能熟练使用Excel/Python/SQL处理跨境数据并可视化</p>
+        </div>
+        <div>
+          <div style="font-size:12px;font-weight:500;color:#993C1D;margin-bottom:6px;">&#9315; 决策建议能力</div>
+          <p style="font-size:12px;color:var(--text-secondary);">能从数据洞察中提炼可行的跨境业务优化建议</p>
+        </div>
+      </div>
+      <a href="resources.html#teacher" style="font-size:13px;color:var(--white);background:#993C1D;padding:8px 20px;border-radius:8px;display:inline-block;">&#128196; 下载评分量规</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">跨境电商数据分析实训平台</div>
+        <p class="footer-desc">理实一体 · 跨境场景 · 项目驱动</p>
+      </div>
+      <div>
+        <div class="footer-title">学习模块</div>
+        <a href="module1.html">跨境电商数据基础</a>
+        <a href="module2.html">选品与供应链分析</a>
+        <a href="module3.html">流量与营销分析</a>
+        <a href="module4.html">综合实战项目</a>
+      </div>
+      <div>
+        <div class="footer-title">学习资源</div>
+        <a href="resources.html#datasets">跨境数据集</a>
+        <a href="resources.html#templates">运营报告模板</a>
+        <a href="resources.html#tools">API数据获取</a>
+        <a href="resources.html#teacher">理实教学包</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 跨境电商数据分析实训平台 · 理实一体化教学</div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
